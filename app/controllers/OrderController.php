@@ -18,7 +18,7 @@ class OrderController {
     public function show($orderId) {
         $orderModel = new Order();
         $order = $orderModel->getOrderDetails($orderId);
-        $refunds = $orderModel->getRefundHistory($orderId);
+       // $refunds = $orderModel->getRefundHistory($orderId);
 
         if (!$order) {
             die("Order not found");
